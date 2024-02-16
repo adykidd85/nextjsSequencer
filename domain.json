@@ -1,0 +1,15 @@
+{
+	"name": "frontend-conversr-ui",
+	"buildContext": "frontend/conversr-ui",
+	"group": ["frontend"],
+	"targets": ["staging", "qa", "production"],
+	"mainDockerfile": "infra/Dockerfile",
+	"services": [
+		{
+			"order": 1,
+			"name": "frontend-conversr-ui",
+			"relativePath": "",
+			"type": "deployment"
+		}
+	]
+}
